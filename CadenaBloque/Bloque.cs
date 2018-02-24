@@ -29,7 +29,7 @@ namespace CadenaBloque
         public void mine()
         {
             string Hashs = id.ToString() + previousHash.ToString() + timestamp.ToString();
-            
+
             StringBuilder sb = new StringBuilder();
             byte[] Hashb;
             using (SHA256 s = SHA256.Create())
